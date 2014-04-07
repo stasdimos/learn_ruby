@@ -29,6 +29,7 @@ end
 
 # #sum takes an *array* of numbers and adds them all together
 # This one is a bit trickier!
+
 describe "sum" do
 
   it "computes the sum of an empty array" do
@@ -55,9 +56,11 @@ end
 describe "#multiply" do
 
   it "multiplies two numbers" do 
+    multiply(20,2).should == 40
   end
 
   it "multiplies several numbers" do
+    multiply(20,2,2).should == 80
   end
 
 end
@@ -80,3 +83,5 @@ describe "#factorial" do
   it "computes the factorial of 10" do 
   end
 end
+
+

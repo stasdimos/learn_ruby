@@ -22,6 +22,7 @@ describe "the hello function" do
     # Line #24 is saying: if we call the method hello, what it returns should be equal to "Hello!"
     # If that's not the case, this is a failing test.
     hello.should == "Hello!"
+    
     # So in hello.rb let's define a method named hello,
     # and let's make it return "Hello!"
 
@@ -51,3 +52,8 @@ describe "the greet function" do
   # Again, the method has to be defined in hello.rb
   # Try see if you can get this test to pass!
 end
+
+
+
+
+
