@@ -28,20 +28,13 @@ def first_word (phrase)
   new_array[0]
 end
 
-# def titleize (x)
-#   array = x.split (" ")
-#   if array.length == 0
-#     x.capitalize
-#   elsif 
-#       array.each do |y|
-#       y.capitalize
-#     end
-#   end
-
-# end
 
 def titleize(x)
-  x = x.humanize
-  return x
+  smallcap = %w(and the over in a)
+  array = x.split(" ")
+  array[0].capitalize!
+  array.each do |word|
+    word.capitalize! unless smallcap.include?(word)
+  end
+  array.join(" ")
 end
-
